@@ -1,0 +1,614 @@
+
+body
+    {
+        background: #000000;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+	
+.tm-white a {
+	color: #fff;
+}
+
+/* start h1 group */
+h1 { 
+    margin-top: 0;
+    margin-bottom: 25px; 
+}
+h1,
+h2,
+h3,
+h4
+    {
+        font-weight: bold;
+    }
+/* end h1 group */
+p { line-height: 1.6em; }
+/* img */
+img
+    {
+        max-width: 100%;
+        height: auto;
+    }
+/* img */
+
+/* overlay */
+.overlay 
+    {
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.4);
+       padding-top: 90px;
+       padding-bottom: 90px;
+    }  
+/* over lay */
+
+/* start page container */
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+/* end page container */
+
+/* start preloader */
+.preloader
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        /*justify-content: center;*/
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: none repeat scroll 0 0 #fff;
+    }
+.sk-spinner-rotating-plane.sk-spinner 
+    {
+         width: 30px;
+        height: 30px;
+        background-color: #be730f;
+         margin: 0 auto;
+        -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+                animation: sk-rotatePlane 1.2s infinite ease-in-out;
+     }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                 transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+
+  50% {
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+
+  100% {
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                 transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+
+  50% {
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+
+  100% {
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+/* end preloader */
+
+/* start navigation */
+.navbar-default
+    {
+        background: #fff;
+        border: none;
+        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        margin: 0!important;
+    }
+.navbar-default .navbar-brand
+    {
+        color: #be730f;
+        font-size: 30px;
+        font-weight: bold;
+        height: 70px;
+        line-height: 35px;
+    }
+.navbar-default .nav li a
+    {
+        color: #666;
+        font-size: 13px;
+        font-weight: bold;
+        height: 70px;
+        line-height: 40px;
+    }
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus,
+.navbar-default .nav li a.current
+    {
+        color: #be730f;
+    }
+
+.navbar-default .navbar-toggle
+    {
+        border: none;
+        padding-top: 20px;
+    }
+.navbar-default .navbar-toggle .icon-bar
+    {
+        background: #be730f;
+        border-color: transparent;
+    }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: transparent }
+
+.logo {
+        max-width: 55px; /* Defina o valor desejado para o tamanho máximo da largura */
+        height: auto; /* Isso garante que a proporção da imagem seja mantida */
+}
+
+
+
+/* end navigation */
+
+/* start home */   
+/* Estilos para a logo pequena */
+.logo-pequena {
+    width: 100px; /* Largura da logo */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Estilos para o título "Aprenda Xadrez" */
+h1.text-upper {
+    font-size: 36px; /* Tamanho da fonte do título */
+    color: #fff; /* Cor do texto branca */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para o texto principal */
+p.tm-white {
+    font-size: 18px; /* Tamanho da fonte do texto principal */
+    color: #fff; /* Cor do texto branca */
+    margin-top: 20px; /* Espaçamento superior */
+}    
+#home
+    {
+    background: url('../images/home-bg.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+    }
+#home p
+    {
+        font-weight: 400;
+        font-style: italic;
+        line-height: 2em;
+    }
+#home img
+    {
+        display: inline-block;
+        margin-top: 30px;
+    }
+#home 
+/* Estilizar o contêiner que envolve o botão e o texto */
+.sem-bolinha {
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+    list-style-type: none; /* Remover o estilo de lista */
+    padding: 0; /* Remover o espaço interno das listas */
+    margin: 0; /* Remover margens padrão das listas */
+  }
+  
+  /* Estilizar o botão */
+  .botao-laranja {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: block; /* Para que o botão ocupe toda a largura do contêiner */
+    margin: 0 auto; /* Centralizar o botão dentro do contêiner */
+    margin-top: 20px; /* Adiciona margem superior de 20 pixels para separar o botão da imagem */
+}
+  
+  
+  /* Estilizar o texto abaixo do botão */
+  .sem-bolinha p {
+    font-size: 16px;
+    margin-top: 5px; /* Espaço entre o botão e o texto */
+  }
+  
+  /* Adicione este CSS ao seu arquivo de estilo ou ao cabeçalho HTML */
+.sem-bolinha {
+    list-style: none;
+}
+/* Estilos para a coluna que envolve o botão */
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para o botão laranja */
+.botao-laranja {
+    background-color: #b86404; /* Cor de fundo laranja */
+    color: #fff; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno (ajuste conforme necessário) */
+    border-radius: 5px; /* Cantos arredondados */
+    text-decoration: none; /* Remover sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Efeito de transição na cor de fundo */
+    text-align: center; /* Centralizar o texto horizontalmente */
+    line-height: 1; /* Centralizar verticalmente o texto (opcional) */
+}
+
+/* Estilo do botão ao passar o mouse (hover) */
+.botao-laranja:hover {
+    background-color: #FF8000; /* Cor de fundo laranja mais escura ao passar o mouse */
+}
+
+  
+/* end home */
+/* start about */
+#about {
+    color: #fff; /* Defina a cor branca para o texto */
+}
+/* Estilo para a div que cria o espaço entre os containers */
+.espaco-entre-containers {
+    margin-bottom: 60px; /* Ajuste o valor conforme necessário para o espaçamento desejado */
+}
+
+/* end about */
+
+/* start depoimentos */
+#testimonials 
+{
+    color: #fff
+
+}
+
+
+/* end depoimentos */
+
+
+/* start sobre */
+#sobre
+    {
+        background: #000000;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+#sobre p
+    {
+        padding-top: 10px;
+    }
+#sobre span
+    {
+        float: left;
+    }
+#sobre .fa
+    {
+        background: #be730f;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 20px;
+    }
+#sobre .text-uppercase
+{
+    color: #fff
+}
+#sobre {
+    color: #fff; /* Defina a cor branca para o texto */
+}
+
+/* end sobre */
+
+
+
+/* Instrutores*/
+#instrutores {
+    background-color: #000000; /* Cor de fundo desejada */
+    padding: 40px 0; /* Espaçamento interno superior e inferior */
+}
+
+/* Estilos para as imagens dos instrutores */
+.instrutor-image img {
+    border: 2px solid #ff6f00; /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da caixa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à imagem */
+}
+
+/* Estilos para o texto dos instrutores */
+.instrutor-text {
+    background-color: transparent; /* Cor de fundo para o texto do instrutor */
+    padding: 18px; /* Espaçamento interno no texto do instrutor */
+    border-radius: 0px; /* Arredonda os cantos da caixa de texto */
+    
+}
+
+.instrutor-text h3 {
+    font-size: 18px; /* Tamanho da fonte para o nome do instrutor */
+    margin-top: 0; /* Remove a margem superior padrão do h3 */
+    color: #fff
+}
+
+.instrutor-text p {
+    font-size: 16px; /* Tamanho da fonte para o texto do instrutor */
+    color: #fff
+}
+.section-title {
+    color: #fff
+}
+
+
+#planos {
+    text-align: center;
+    padding: 50px 0;
+    height: 100vh;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  
+  /* General styling for the "Planos" section */
+  .planos {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.transparente {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.planos.active .planos-title {
+    background-color: #b86404; /* Orange background for the top */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add padding for better visual appeal */
+}
+
+.planos.active .planos-title h4 {
+    font-size: 24px; /* Adjust the font size of the title */
+    font-weight: bold; /* Set the font weight to bold */
+}
+
+.planos.active .planos-title .text-preco {
+    font-size: 18px; /* Adjust the font size of the price description */
+}
+
+.planos.active .planos-title .price {
+    font-size: 40px; /* Increase the font size */
+    font-weight: bold; /* Set the font weight to bold */
+}
+
+/* Styling for the "Eu Quero" button */
+.btn.btn-primary.text-uppercase {
+    margin-top: 20px;
+    background-color: #fff; /* White background */
+    color: #b86404; /* Orange text */
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.btn.btn-primary.text-uppercase:hover {
+    background-color: #b86404; /* Orange background on hover */
+    color: #000; /* Black text on hover */
+}
+
+
+/* Estilos para a seção "Garantia de 7 Dias" */
+#garantia {
+    background-color: #000000; /* Cor de fundo desejada */
+    padding: 40px 0; /* Espaçamento interno superior e inferior */
+}
+
+
+/* Estilo para a imagem da garantia */
+.garantia-img {
+    max-width: 40%; /* Largura máxima da imagem de garantia */
+    margin-left: 190px; /* Adicione uma margem à esquerda da imagem */
+    display: block;
+}
+
+/* Estilo para o texto da garantia */
+#garantia-texto {
+    font-size: 15px; /* Tamanho da fonte do texto de garantia */
+    color: #fff; /* Cor do texto de garantia */
+}
+.titulo-garantia {
+    color: #fff; /* Defina a cor desejada para o título (por exemplo, azul) */
+}
+
+
+
+
+
+
+/* Estilo para a imagem da seção de Exclusividade */
+/* Estilo para a imagem da seção de Exclusividade em telas maiores */
+#exclusividade .img-small {
+    max-width: 60%; /* A imagem ocupa toda a largura da coluna */
+    height: auto;   /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a imagem horizontalmente */
+}
+
+
+/* Estilo para a imagem da seção de Exclusividade em telas menores (como celulares) */
+@media (max-width: 768px) {
+    #exclusividade .img-small {
+        max-width: 50%; /* Reduz o tamanho da imagem para 80% da largura da coluna */
+        height: auto;   /* Mantém a proporção da imagem */
+        display: block;
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    }
+}
+
+
+/* Estilo para o texto na seção de Exclusividade */
+#exclusividade {
+    color: #fff; /* Defina a cor branca para o texto */
+}
+
+/* Estilo para o subtítulo na seção de Exclusividade */
+#exclusividade .section-subtitle {
+    color: #fff; /* Defina a cor branca para o subtítulo */
+}
+
+/* Arquivo CSS personalizado para destacar o texto */
+.highlighted-text {
+    color: #FFA500; /* Cor laranja (pode ser alterada) */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 22px; /* Tamanho da fonte (pode ser alterado) */
+    /* Outros estilos de destaque, como fundo amarelo, podem ser adicionados aqui */
+}
+
+
+       
+/* CSS para criar espaço entre as seções */
+.espaco-entre-secoes {
+    margin-top: 60px; /* Ajuste o valor conforme necessário */
+}
+
+/* start download */
+#download
+    {
+        color:#fff
+    }
+    .text-uppercase{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .espaco-entre-secoes {
+        margin-top: 60px; /* Ajuste o valor conforme necessário */
+    }
+
+/* Estilo para o botão do WhatsApp */
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da página */
+    right: 20px; /* Distância da borda direita da página */
+    z-index: 999999; /* Certifique-se de que o botão esteja acima de outros elementos */
+    background-color: #25d366; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 50%; /* Para criar um botão redondo */
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    text-align: center;
+    font-size: 24px; /* Tamanho do ícone do WhatsApp */
+    line-height: 60px; /* Centralizar verticalmente o ícone */
+    cursor: pointer;
+}
+
+/* Estilo para o ícone do WhatsApp (usando a biblioteca de ícones FontAwesome como exemplo) */
+#whatsapp-button i {
+    font-size: inherit;
+}
+
+/* Efeito de hover para o botão */
+#whatsapp-button:hover {
+    background-color: #128c7e; /* Mudar a cor de fundo quando o cursor passa por cima */
+}
+
+
+
+
+
+/* start footer */
+footer
+    {
+        background: #fff;
+        font-weight: 400;
+        text-align: center;
+        padding: 20px;
+    }
+
+/* end footer */
+
+@media screen and ( max-width: 991px ) {
+    .templatemo-box {
+        margin-bottom: 30px;
+    }
+    #pricing .active {
+        bottom: 0;
+    }
+    .pricing {
+        margin-bottom: 20px;
+    }
+    #feature img, #download img {
+        margin-top: 30px;
+    }
+    #feature1 img {
+        margin-bottom: 30px;
+    }
+}
+@media screen and ( max-width: 767px ) {
+    .navbar-default .nav li a {
+        height: auto;
+        line-height: 2em;
+    }
+    #feature, #pricing, #download {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    #contact .overlay {
+        padding-top: 40px;
+    }
+}
+/* start media 360 */
+@media screen and ( max-width: 360px ){
+    .pricing
+        {
+            padding-bottom: 40px;
+        }
+}
+/* end media 360 */
